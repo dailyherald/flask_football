@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
+
+  <title>
+    Title
+  </title>
+
+
+</head>
+<body>
+<div> <!--Remember to include an overall div otherwise the map div will not work.-->
+
+	<h1>{{ object.School }},<small> {{ object.District }}</small></h1>
+  <p>Participation in the {{ object.School }} football program changed {{ object.PercChg }} since {{ object.year1 }}.<br>
+    Estimated enrollment changed {{ object.enrollChg }} from {{ object.year1 }} to {{ object.year2 }}
+  </p>
+
+	<!-- use this line for use with local server -->
+	<p><strong><a href="../">RETURN TO MAIN PAGE</a></strong></p>
+	
+	<!-- use this line for use when freezing the app
+	<p><strong><a href="../index.html">RETURN TO MAIN PAGE</a></strong></p>-->
+
+</div>
+
+</body>
+</html>
