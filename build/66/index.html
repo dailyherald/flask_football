@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width" />
 
   <title>
-    {{ object.School }} - H.S. football participation
+    Vernon Hills H.S. - H.S. football participation
   </title>
 
     <link rel="stylesheet" href="../static/normalize.css" />
@@ -73,18 +73,16 @@
       <br>
 
 
-      <h1>{{ object.School }},<small> {{ object.District }}</small></h1>
+      <h1>Vernon Hills H.S.,<small> Libertyville HS Dist. 128</small></h1>
       <br>
-      <h3>Participation in the {{ object.School }} football program changed <strong> {{ object.PercChg }} </strong>since {{ object.year1 }}.<br>
-        <small>Estimated enrollment changed {{ object.enrollChg }} from {{ object.year1 }} to {{ object.year2 }}</small>
+      <h3>Participation in the Vernon Hills H.S. football program changed <strong> -10.1% </strong>since 2008.<br>
+        <small>Estimated enrollment changed -1.5% from 2008 to 2016</small>
       </h3>
       <br>
       <div id="chartDiv"></div>
-      {% if object.Note != '--' %}
-      <br><p><small>*Note:  {{ object.Note }} </small></p>
-      {% else %}
+      
         <br>
-        {% endif %}
+        
     </div>
   </div>
 </div>
@@ -132,8 +130,8 @@
             }
         },
         series: [{  
-            name: '{{ object.School }}',
-            data: $.map(["{{ object.y2008 }}", "{{ object.y2009 }}", "{{ object.y2010 }}", "{{ object.y2011 }}", "{{ object.y2012 }}", "{{ object.y2013 }}", "{{ object.y2014 }}", "{{ object.y2015 }}", "{{ object.y2016 }}", "{{ object.y2017 }}"], function (valueTown) {
+            name: 'Vernon Hills H.S.',
+            data: $.map(["99", "103", "107", "105", "102", "100", "86", "88", "89", "89"], function (valueTown) {
         return isNaN(valueTown) ? { y: null } : parseFloat(valueTown);
             })
         }],
